@@ -179,9 +179,18 @@ const Form = () => {
               {success && (
                 <div className="" style={{ minHeight: "50vh" }}>
                   {Object.keys(formErrors).length === 0 && isSubmitting && (
-                    <p className="success-msg text-success pt-2 text-center">
-                      Form submitted successfully
-                    </p>
+                    <div class="alert alert-success" role="alert">
+                      <h5 className="alert-heading">
+                        <strong className="">Well done!</strong> Sign up successful.
+                      </h5>
+                      
+                      <p className="pt-4">
+                        Welcome  <strong> {formValues.fullName}</strong>
+                      </p>
+                    </div>
+                    // <p className="success-msg text-success shadow text-center card p-5">
+                    //   Form submitted successfully
+                    // </p>
                   )}
                 </div>
               )}
