@@ -17,6 +17,7 @@ const Form = () => {
   //input change handler
   const handleChange = (e) => {
     const { name, value } = e.target;
+    let isChecked = e.target.checked;
     setFormValues({ ...formValues, [name]: value });
   };
 
