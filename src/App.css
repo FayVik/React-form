@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 p{
   font-size: 14px;
 }
@@ -5,4 +7,32 @@ input {
   width: 100%;
   outline: none;
   padding: 6px 0 6px 6px;
+  border: 1px solid #0278c3;
+  border-radius: 8px;
+}
+.img{
+  width: 100%;
+  height: 100vh;
+  object-fit: fill;
+  background-position: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.521), rgba(0, 0, 0, 0.521)), url("./img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+h2{
+  font-weight: bolder;
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+}
+h1{
+  font-weight: bolder;
+  font-family: 'Roboto', sans-serif;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+}
+.fade-white{
+background-color: rgba(225, 225, 225, 0.815);
+padding: 5px;
+border-radius: 3px;
 }
