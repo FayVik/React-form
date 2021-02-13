@@ -64,7 +64,7 @@ const Form = () => {
     }
 
     if (!values.isChecked === true) {
-      errors.isChecked = "Checkbox can not be empty";
+      errors.isChecked = "You must accept our Terms and Conditions";
     }
 
     if(Object.keys(errors).length == 0){
@@ -157,7 +157,7 @@ const Form = () => {
                         className="custom-control-label"
                         htmlFor="customCheck1"
                       >
-                        Remember me
+                        Terms and Conditions
                       </label>
                       {formErrors.isChecked && (
                         <p className="error text-danger">
